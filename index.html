@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO 82 — AI Consulting</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-brand">STUDIO 82 <span class="reg">&reg;</span></div>
+        <div class="header-meta">
+            <span class="meta-label">OPEN PROGRAM 2026</span>
+            <span class="meta-date">CLOSES 31 MARCH</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title hero-anim">
+                AI CONSULTING<br>IS EXPENSIVE.<br>IT SHOULDN&rsquo;T BE.
+            </h1>
+            <div class="hero-body hero-anim">
+                <p>I build AI systems at scale &mdash; agents, deployments, training teams for products with 30M+ users. That kind of help is usually out of reach for the businesses that need it most.</p>
+                <p>So I&rsquo;m opening 5 consulting spots. <strong>Crown Heights, Flatbush, East NY, Brownsville</strong> &mdash; and beyond. Tell me your problem. I pick based on merit alone. Name your price at the end.</p>
+            </div>
+            <button class="hero-cta hero-anim" id="openForm" type="button">
+                <span class="cta-text">TELL ME YOUR PROBLEM</span>
+                <span class="cta-arrow">&nearr;</span>
+            </button>
+        </section>
+
+        <!-- Past Work -->
+        <section class="past-work">
+            <div class="pw-header">
+                <h2 class="pw-title">PAST WORK</h2>
+                <span class="pw-sub">SELECTED ENGAGEMENTS</span>
+            </div>
+            <div class="pw-list">
+                <article class="pw-item">
+                    <span class="pw-num">01</span>
+                    <div class="pw-body">
+                        <h3>Customs &amp; Import Documentation</h3>
+                        <p>Streamlining regulatory compliance and trade paperwork for cross-border operations.</p>
+                    </div>
+                    <span class="pw-tag">Cape Town, SA</span>
+                </article>
+                <article class="pw-item">
+                    <span class="pw-num">02</span>
+                    <div class="pw-body">
+                        <h3>Material Cost Estimation</h3>
+                        <p>Building accurate project budgets and procurement estimates for construction materials.</p>
+                    </div>
+                    <span class="pw-tag">Brooklyn, NY</span>
+                </article>
+                <article class="pw-item">
+                    <span class="pw-num">03</span>
+                    <div class="pw-body">
+                        <h3>Real Estate Reserve Management</h3>
+                        <p>Helping brokers analyze reserves, plan operations, and figure out what needs to be done.</p>
+                    </div>
+                    <span class="pw-tag">Brooklyn, NY</span>
+                </article>
+                <article class="pw-item">
+                    <span class="pw-num">04</span>
+                    <div class="pw-body">
+                        <h3>30M+ User Mobile Platform</h3>
+                        <p>AI integration, deployment strategy, and team training for a major consumer app.</p>
+                    </div>
+                    <span class="pw-tag">Brooklyn, NY</span>
+                </article>
+                <article class="pw-item">
+                    <span class="pw-num">05</span>
+                    <div class="pw-body">
+                        <h3>SEO Tooling &amp; Strategy</h3>
+                        <p>Custom-built tools and strategic frameworks to improve organic search performance.</p>
+                    </div>
+                    <span class="pw-tag">Remote</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="how-section">
+            <div class="step"><span class="step-num">01</span><span class="step-label">Submit your problem</span></div>
+            <div class="step"><span class="step-num">02</span><span class="step-label">5 selected on merit</span></div>
+            <div class="step"><span class="step-num">03</span><span class="step-label">Name your price</span></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>STUDIO 82 &middot; Brooklyn, NY &middot; Cape Town, SA</span>
+        <span>&copy; 2026</span>
+    </footer>
+
+    <!-- ── Form Overlay ──────────────────── -->
+    <div class="form-overlay" id="formOverlay">
+        <div class="form-progress"><div class="form-progress-bar" id="progressBar"></div></div>
+        <div class="form-chrome">
+            <span class="form-indicator" id="formIndicator">01 / 04</span>
+            <button class="form-close" id="formClose" type="button" aria-label="Close">&times;</button>
+        </div>
+        <div class="form-viewport">
+            <div class="form-track" id="formTrack">
+                <div class="form-slide">
+                    <div class="slide-inner">
+                        <h2 class="slide-title">Let&rsquo;s start with your email.</h2>
+                        <p class="slide-sub">So I can reach you if your problem is selected.</p>
+                        <input type="email" class="slide-input" id="fEmail" placeholder="your@email.com" autocomplete="email">
+                    </div>
+                </div>
+                <div class="form-slide">
+                    <div class="slide-inner">
+                        <h2 class="slide-title">Tell me about yourself.</h2>
+                        <p class="slide-sub">Who are you, what&rsquo;s your story? No pressure &mdash; even a single sentence works. Knowing you helps me understand the problem.</p>
+                        <textarea class="slide-textarea" id="fAboutYou" placeholder="I'm..." rows="1"></textarea>
+                    </div>
+                </div>
+                <div class="form-slide">
+                    <div class="slide-inner">
+                        <h2 class="slide-title">Tell me about your business.</h2>
+                        <p class="slide-sub">What is it that you do?</p>
+                        <textarea class="slide-textarea" id="fBusiness" placeholder="We..." rows="1"></textarea>
+                    </div>
+                </div>
+                <div class="form-slide">
+                    <div class="slide-inner">
+                        <h2 class="slide-title">Tell me about the problem.</h2>
+                        <p class="slide-sub">What&rsquo;s the challenge you&rsquo;re facing? How is it affecting your business?</p>
+                        <textarea class="slide-textarea" id="fProblem" placeholder="The biggest challenge is..." rows="1"></textarea>
+                    </div>
+                </div>
+                <!-- Step 4: Review -->
+                <div class="form-slide">
+                    <div class="slide-inner">
+                        <h2 class="slide-title">Review your submission.</h2>
+                        <p class="slide-sub">Make sure everything looks good before submitting.</p>
+                        <div class="review-list" id="reviewList"></div>
+                    </div>
+                </div>
+                <!-- Step 5: Confirmation -->
+                <div class="form-slide">
+                    <div class="slide-inner slide-confirm">
+                        <h2 class="slide-title">RECEIVED.</h2>
+                        <p class="slide-sub">Thank you. If your problem is selected, I&rsquo;ll reach out to your email.</p>
+                        <button class="confirm-close-btn" id="confirmClose" type="button">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-footer" id="formFooter">
+            <button class="form-btn btn-back" id="btnBack" type="button">BACK</button>
+            <button class="form-btn btn-next" id="btnNext" type="button">NEXT &nearr;</button>
+        </div>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

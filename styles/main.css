@@ -1,0 +1,65 @@
+/* ========================================
+   STUDIO 82 — Base
+   ======================================== */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #ebebeb;
+    --bg-form: #f6f6f4;
+    --text: #1a1a1a;
+    --text-mid: #555;
+    --text-muted: #999;
+    --text-light: #b0b0b0;
+    --border: #cdcdcd;
+    --white: #fff;
+    --error: #c44;
+    --font: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    --side-pad: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main { flex: 1; }
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+input, textarea { font-family: inherit; font-size: inherit; color: inherit; outline: none; border: none; background: none; resize: none; }
+::placeholder { color: var(--text-light); }
+
+/* Hero entrance */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-anim {
+    animation: fadeUp 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.hero-anim:nth-child(1) { animation-delay: 0.05s; }
+.hero-anim:nth-child(2) { animation-delay: 0.18s; }
+.hero-anim:nth-child(3) { animation-delay: 0.32s; }
+
+@media (max-width: 600px) {
+    :root { --side-pad: 20px; }
+}
