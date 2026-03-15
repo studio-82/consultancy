@@ -85,11 +85,11 @@
             btnBack.style.visibility = step === 0 ? 'hidden' : 'visible';
 
             if (step === REVIEW) {
-                btnNext.innerHTML = 'SUBMIT &nearr;';
+                btnNext.innerHTML = 'SUBMIT';
             } else if (step === INPUT_STEPS - 1) {
-                btnNext.innerHTML = 'REVIEW &nearr;';
+                btnNext.innerHTML = 'REVIEW';
             } else {
-                btnNext.innerHTML = 'NEXT &nearr;';
+                btnNext.innerHTML = 'NEXT';
             }
         }
 
